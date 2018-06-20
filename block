@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="bootstrap.min.css" rel="stylesheet">
+<style>
+.col{border: 1px solid black;}
+.logo{
+cursor: pointer;
+width: 4%;
+height: 15%;
+position: absolute;
+background: #EEE url(arrow_left.png) center center no-repeat;
+top: 0;
+right: 23%;
+}
+.logo2{
+cursor: pointer;
+width: 4%;
+height: 15%;
+position: absolute;
+background: #EEE url(arrow_left.png) center center no-repeat;
+bottom: 10%;
+left: 19%;
+}
+.background img{
+width: 100%;
+}
+.header-top{position: relative;
+  border: 1px solid black;}
+.container {
+    position: relative;
+  border: 1px solid black;
+}
+.content {
+  /* margin-left нужен, так как слева от содержимого будет стрелка */
+  margin-left: 35px;
+}
+.toggler {
+    position: absolute;
+  height: 100%;
+  width: 30px;
+  float: left;
+  background: #EEE url("arrow_left.png") center center no-repeat;
+  border-right: #AAA 1px solid;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="header-top">
+<div class="background">
+<img src="images.jpg" 
+   alt="lorem">
+</div>
+<div class="logo"></div>
+<div class="logo2"></div>
+</div>
+<div class="container">
+  <div class="toggler">
+  </div>
+  <div class="content">
+Почему он используется?
+Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).Почему он используется?
+Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+  </div>
+</div>
+<hr>
+<div class="container">
+<div class="row">
+  <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-3">col</div>
+  <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-3">col</div>
+  <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-3">col</div>
+  <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-3">col</div>
+</div>
+  <div class="row">
+    <div class="col-sm">
+      Одна из трёх колонок
+    </div>
+    <div class="col-sm">
+      Одна из трёх колонок
+    </div>
+    <div class="col-sm">
+      Одна из трёх колонок
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 из 2
+    </div>
+    <div class="col">
+      2 из 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 из 3
+    </div>
+    <div class="col">
+      2 из 3
+    </div>
+    <div class="col">
+      3 из 3
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 из 3
+    </div>
+    <div class="col-6">
+      2 из 3 (широкая)
+    </div>
+    <div class="col">
+      3 из 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 из 3
+    </div>
+    <div class="col-5">
+      2 из 3 (широкая)
+    </div>
+    <div class="col">
+      3 из 3
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      1 из 3
+    </div>
+    <div class="col-md-auto">
+      Содержимое адаптивной ширины
+    </div>
+    <div class="col col-lg-2">
+      3 из 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 из 3
+    </div>
+    <div class="col-md-auto">
+      Содержимое адаптивной ширины
+    </div>
+    <div class="col col-lg-2">
+      3 из 3
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+<div class="row">
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="w-100"></div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+</div>
+<hr>
+<div class="row">
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+</div>
+<div class="row">
+  <div class="col-8">col-8</div>
+  <div class="col-4">col-4</div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-8">col-sm-8</div>
+  <div class="col-sm-4">col-sm-4</div>
+</div>
+<div class="row">
+  <div class="col-sm">col-sm</div>
+  <div class="col-sm">col-sm</div>
+  <div class="col-sm">col-sm</div>
+</div>
+<hr>
+<!-- Размещайте колонки для мобильных устройств: делайте одну – полной ширины, и другую - половинной -->
+<div class="row">
+  <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+</div>
+
+<!-- Колонки начинаются с 50% ширины на мобильных и меняют ее на 33,3% на мониторе -->
+<div class="row">
+  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+</div>
+
+<!-- Колонки всегда 50% ширины, везде -->
+<div class="row">
+  <div class="col-6">.col-6</div>
+  <div class="col-6">.col-6</div>
+</div>
+<hr>
+<div class="row no-gutters">
+  <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8</div>
+  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+</div>
+</div>
+</body>
+</html>
