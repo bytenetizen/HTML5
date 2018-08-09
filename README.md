@@ -16,3 +16,27 @@ background: url(images/sun2.png) no-repeat;
     font-weight: normal;
     font-style: normal;
 }
+
+
+@media (pointer:coarse) {
+    .which-pointer::after {
+        content: "You have a coarse pointer, are you on a touchscreen device?";    
+    } 
+}
+
+@media (pointer:fine) {
+    .which-pointer::after {
+        content: "You have a fine pointer, are you using a mouse or trackpad?";    
+    } 
+}
+
+@media (min-width: 40em) and (max-width: 59em) {
+    .main {display: none;}
+}
+
+
+@media screen and (max-width: 992px) {
+
+}
+
+
