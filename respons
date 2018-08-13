@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script type=text/javascript>
+            function setScreenHWCookie() {
+                $.cookie('sw',screen.width);
+                $.cookie('sh',screen.height);
+                return true;
+            }
+            setScreenHWCookie();
+        </script>
+    </head>
+    <body>
+        <h1>Using jquery.cookie.js to store screen height and width</h1>
+    <?php
+
+         if(isset($_COOKIE['sw'])) { echo "Ширина окна: ".$_COOKIE['sw']."<br/>";}
+         if(isset($_COOKIE['sh'])) { echo "Высота окна: ".$_COOKIE['sh']."<br/>";}
+		 
+		 
+		 if ($_COOKIE['sw'] >= 1400){
+		echo 'Ваше окно больше 1400px';
+	}
+	elseif ($_COOKIE['sw'] >= 1000 && $_COOKIE['sw'] <= 1399){
+		echo 'Ваше окно 1000px and 1399px';
+	}
+	
+	elseif ($_COOKIE['sw'] >= 600 && $_COOKIE['sw'] <= 1000){
+		echo 'Ваше окно 600px and 1000px';
+	}
+	elseif ($_COOKIE['sw'] >= 360 && $_COOKIE['sw'] <= 600){
+		echo 'Ваше окно 360px and 600px';
+	}
+	
+	else {
+    echo 'Ваше окно меньше не определилось';
+}
+		 
+    ?>
+	
+<?	
+function isMobile() { 
+
+return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
+}
+
+if(isMobile()){
+   // header("Location: Ваш сайт моб. версия");
+	echo 'ьфду';
+}
+else {
+	echo 'большой';
+	}
+?>
+    </body>
+    </html>
+
+
+  
