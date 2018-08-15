@@ -17,6 +17,29 @@ background: url(images/sun2.png) no-repeat;
     font-style: normal;
 }
 
+<meta name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+@media only screen and (min-device-width: 900px){
+#main{
+width: 1000px;
+    margin: 0 auto;
+}
+}
+@media only screen and (max-device-width: 900px){
+#main{
+width: 100%;
+    margin: 0 auto;
+}
+}
+@media only screen and (max-device-width: 500px){
+#main{
+width: 100%;
+    margin: 0 auto;
+}
+	#sitemail {
+	display: none;
+	}
+}
+
 
 @media (pointer:coarse) {
     .which-pointer::after {
