@@ -6,7 +6,11 @@ background: url(images/sun2.png) no-repeat;
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
     
-    
+    p { text-transform: lowercase; }
+
+p:first-letter {
+  text-transform: uppercase;
+}
     
     @font-face {
     font-family: 'MyriadProBoldCondensed';
